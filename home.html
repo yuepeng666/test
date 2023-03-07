@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon-precomposed" href="//puyunsoft.cn/home.ico" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="普云商品" />
+    <title>普云商品</title>
+    <style>
+      body,
+      div,
+      span,
+      i {
+        padding: 0;
+        margin: 0;
+        background: #fff;
+        font-family: "Times New Roman", sans-serif;
+      }
+      body {
+        background-color: #edf2fe;
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-size: 0.28rem;
+      }
+    </style>
+    <script>
+      document.documentElement.style.fontSize =
+        (window.innerWidth / 750) * 100 + "px";
+    </script>
+  </head>
+  <body>
+    <!-- inAppUse -->
+    <template id="step1">
+      <style>
+        .dialog {
+          position: fixed;
+          right: 0.16rem;
+          top: 0.36rem;
+          display: block;
+          width: 4.1rem;
+          background: #000000;
+          border-radius: 0.12rem;
+          opacity: 0.8;
+          padding: 0.16rem 0.24rem;
+          font-size: 0.26rem;
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 0.36rem;
+        }
+        .triangle-up {
+          width: 0;
+          height: 0;
+          border-left: 0.07rem solid transparent;
+          border-right: 0.07rem solid transparent;
+          border-bottom: 0.12rem solid black;
+          position: absolute;
+          right: 0.34rem;
+          top: -0.11rem;
+        }
+        .step1-bg {
+          width: 6.86rem;
+          height: 8.4rem;
+        }
+      </style>
+      <div class="dialog">
+        <i class="triangle-up"></i>
+        先点击这里,<br />
+        然后选择在浏览器中打开 “
+        <svg width="0.28rem" height="0.28rem" viewBox="0 0 35 36">
+          <g
+            transform="translate(-277.000000, -293.000000)"
+            fill="#fff"
+            fill-rule="nonzero"
+          >
+            <g transform="translate(40.000000, 201.000000)">
+              <g transform="translate(0.000000, 46.000000)">
+                <g transform="translate(224.850000, 38.000000)">
+                  <g transform="translate(7.000000, 3.321984)">
+                    <g transform="translate(5.500000, 5.536640)">
+                      <rect
+                        opacity="0"
+                        x="0"
+                        y="0"
+                        width="0.28rem"
+                        height="0.28rem"
+                      ></rect>
+                      <path
+                        d="M17.05,33.1829262 C8.26129334,33.1829262 1.13666666,26.0108372 1.13666666,17.1635825 C1.13666666,8.31632787 8.26129334,1.14423882 17.05,1.14423882 C25.8387067,1.14423882 32.9633333,8.31632783 32.9633333,17.1635825 C32.9633333,26.0108372 25.8387067,33.1829262 17.05,33.1829262 Z M17.05,30.8944486 C24.58269,30.8944486 30.69,24.7464533 30.69,17.1635825 C30.69,9.58071177 24.58269,3.43271651 17.05,3.43271651 C9.51731,3.43271651 3.41,9.58071177 3.41,17.1635825 C3.41,24.7464533 9.51731,30.8944486 17.05,30.8944486 Z"
+                      ></path>
+                      <path
+                        d="M12.8038718,21.8249969 L19.46087,19.5905131 L19.46087,19.5905131 L21.0692533,21.2096111 L10.1657282,24.8666069 C9.84723416,24.9734284 9.50244774,24.801834 9.39562619,24.4833399 C9.35378883,24.3585996 9.35352583,24.2236566 9.39487665,24.0987542 L13.0307467,13.1164098 L13.0307467,13.1164098 L14.63913,14.7355077 L12.4183875,21.4410637 C12.3655814,21.6005122 12.4520322,21.7725786 12.6114808,21.8253847 C12.6739635,21.8460777 12.741473,21.8459416 12.8038718,21.8249969 Z M13.0307467,13.117554 L23.9342718,9.46055818 C24.2527658,9.35373663 24.5975523,9.5253311 24.7043738,9.84382516 C24.7462112,9.96856545 24.7464742,10.1035085 24.7051233,10.2284109 L21.0692533,21.2107553 L21.0692533,21.2107553 L19.46087,19.5916573 L21.6815742,12.8872705 C21.7343878,12.7278244 21.647945,12.555754 21.4884989,12.5029404 C21.4260126,12.482243 21.3584978,12.4823775 21.2960944,12.5033237 L14.63913,14.7377962 L14.63913,14.7377962 L13.0307467,13.117554 Z"
+                      ></path>
+                      <path
+                        d="M15.9133333,17.1635825 C15.9133333,17.5723797 16.1299808,17.9501239 16.4816667,18.1545225 C16.8333526,18.3589211 17.2666474,18.3589211 17.6183333,18.1545225 C17.9700192,17.9501239 18.1866667,17.5723797 18.1866667,17.1635825 C18.1866667,16.7547854 17.9700192,16.3770412 17.6183333,16.1726426 C17.2666474,15.968244 16.8333526,15.968244 16.4816667,16.1726426 C16.1299808,16.3770412 15.9133333,16.7547854 15.9133333,17.1635825 L15.9133333,17.1635825 Z"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+        ”
+      </div>
+      <div class="img-wrapper">
+        <img src="./step-1.webp" class="step1-bg" />
+      </div>
+    </template>
+    <template id="step2">
+      <style>
+        .step2-bg {
+          width: 6.86rem;
+          height: 8.4rem;
+        }
+      </style>
+      <img src="./step-2.webp" class="step2-bg" />
+    </template>
+    <template id="step3">
+      <img src="./step3.png" alt="普云商品" class="home-bg" />
+      <div class="home-log-wrapper">
+        <img src="./home-logo.png" class="home-logo" />
+      </div>
+      <style>
+        body {
+          background-color: #fff;
+          justify-content: flex-start;
+        }
+        .home-bg {
+          width: 5.56rem;
+          height: 7.41rem;
+          margin-top: 1.5rem;
+        }
+        .home-log-wrapper {
+          margin-top: 2rem;
+          width: 100%;
+          text-align: center;
+        }
+        .home-logo {
+          width: 2.2rem;
+        }
+      </style>
+      <script>
+        let flag = false;
+        document.addEventListener("visibilitychange", function () {
+          console.log("visibilitychange", document.hidden, flag);
+          if (document.hidden) {
+            // do nothing
+          } else if (flag) {
+            window.location.href =
+              "tbsellerplatform://?apiName=openPlugin&from=qn.marketing.0.0&biz=%7B%22appkey%22:%2221284467%22,%22page%22:%22%7B%5C%22url%5C%22:%5C%22pages/index/index%5C%22%7D%22,%22query%22:%22%7B%5C%22from%5C%22:%5C%22desktop%5C%22%7D%22%7D";
+          }
+        });
+        window.location.href =
+          "tbsellerplatform://?apiName=openPlugin&from=qn.marketing.0.0&biz=%7B%22appkey%22:%2221284467%22,%22page%22:%22%7B%5C%22url%5C%22:%5C%22pages/index/index%5C%22%7D%22,%22query%22:%22%7B%5C%22from%5C%22:%5C%22desktop%5C%22%7D%22%7D";
+        flag = true;
+      </script>
+    </template>
+    <script>
+      function ifInApp(str) {
+        return str.indexOf("tbsellerworkbench") > -1;
+      }
+      function parseTemplate(ele) {
+        if (ele.nodeName === "STYLE") {
+          document.head.append(ele);
+        } else {
+          document.body.append(ele);
+        }
+      }
+      function renderTemplate() {
+        const agent = window.navigator.userAgent;
+        let title = "普云商品";
+        let step = 1;
+        if (ifInApp(agent)) {
+          title = "添加到桌面";
+        } else if (window.navigator.standalone) {
+          step = 3;
+        } else {
+          step = 2;
+        }
+        document.title = title;
+        let template = document.getElementById(`step${step}`);
+        Array.from(template.content.children).forEach(parseTemplate);
+        template = null;
+        let templates = Array.from(
+          document.querySelectorAll("body > template")
+        );
+        templates.forEach((t) => t.remove());
+        templates = null;
+      }
+      renderTemplate();
+    </script>
+  </body>
+</html>
